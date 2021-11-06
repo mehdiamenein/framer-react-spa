@@ -13,7 +13,9 @@ function App() {
     }
   }
   useEffect(() => {
-    waitForFramerElement("CoolButton", "hello", {title: "hello to framer fans"});
+    waitForFramerElement("CoolButton", "hello", {title: "hello to framer fans", onClick: () => {
+      console.log("hello")
+    }});
   });
   return <div>
     <div id="hello"></div>

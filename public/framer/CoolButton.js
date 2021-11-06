@@ -7,9 +7,7 @@ window.CoolButton = (id, props) => {
     html`
       <${CoolButton}
         title=${props.title}
-        onClick=${() => {
-          window.open("https://www.framer.com/docs/guides/handshake/", "_blank");
-        }}
+        onClick=${props.onClick}
       >
       </${CoolButton}>
     `,
